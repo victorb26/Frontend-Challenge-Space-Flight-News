@@ -1,0 +1,24 @@
+.group{
+    display: flex;
+    align-items: center;
+}
+.container_meio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container_banner img { 
+  margin-left: 35px;
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+}
+
+.line {
+  color: #302e53;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
