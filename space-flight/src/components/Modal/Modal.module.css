@@ -1,0 +1,20 @@
+.modal {
+    display: flex;
+    justify-content: space-between;
+    border-color: #302E53;
+}
+
+.modal__img {
+    width: 200px;
+    height: 200px;
+}
+
+.modal__img img{
+    width: 200px;
+    height: 200px;
+}
+
+.modal__info {
+    width: 400px;
+    height: 200px;
+}
