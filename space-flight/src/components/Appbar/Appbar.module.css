@@ -1,0 +1,41 @@
+.container-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+  }
+  .searching {
+    margin-right: 20px;
+    padding: 10px;
+    height: 30px;
+    width: 230px;
+    border: solid 2px #302e53;
+    border-radius: 15px;
+  }
+  .txtFind {
+    height: 30px;
+    width: 200px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+  }
+  .search-icon {
+    height: 20px;
+  }
+  .filter {
+    margin-right: 25px;
+    padding: 10px;
+  }
+  .filter_select {
+    width: 120px;
+    height: 55px;
+    border: solid 2px #302e53;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 16px;
+    outline: 0;
+  }
+
+  .filter_select option {
+    text-align: center;
+  }
