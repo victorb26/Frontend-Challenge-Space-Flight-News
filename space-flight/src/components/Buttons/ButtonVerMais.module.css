@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 .btn{
     border-radius: 8px;
     background: #D07017 ;
     border: #D07017 ;
     color: #302E53;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     height: 20px;
     width: 90px;
 }
