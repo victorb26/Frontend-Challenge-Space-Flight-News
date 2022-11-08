@@ -1,7 +1,8 @@
 import React from 'react';
 import "./App.css";
-import Appbar from './components/Appbar/Appbar';
-import Header from './components/Header/Header';
+import Appbar from './components/Appbar/Appbar.jsx';
+import Header from './components/Header/Header.jsx';
+import Modal from './components/Modal/Modal.jsx';
 
 function App() {
   
@@ -9,7 +10,7 @@ function App() {
     <>
     <Appbar/>
     <Header/>
-    
+    <Modal/>
     </>
   )
 }
