@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Modal from "../Modal/Modal.jsx";
-import ButtonVerMais from "../Buttons/ButtonVerMais.jsx";
+import ButtonCarregar from "../Buttons/ButtonCarregar.jsx";
 
 export default function Body() {
   const [news, setNews] = useState([]);
@@ -19,8 +19,7 @@ export default function Body() {
 
   return (
     <>
-      {news
-        .sort((a, b) => {
+      {news.sort((a, b) => {
           if (a > b) {
             return 1;
           }
@@ -47,6 +46,7 @@ export default function Body() {
             </section>
           );
         })}
+        <ButtonCarregar/>
     </>
   );
 }
