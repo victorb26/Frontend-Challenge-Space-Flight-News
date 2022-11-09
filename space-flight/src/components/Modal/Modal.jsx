@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./Modal.module.css";
+import styles from "./Modal.module.css";
 import { styled, Box } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 
@@ -54,15 +54,15 @@ export default function Modal(props) {
         BackdropComponent={Backdrop}
       >
         <Box sx={style}>
-          <section className="modal">
-            <div className="modalImage">
+          <section className={styles.modal}>
+            <div className={styles.modalImage}>
               <img src={props.img} />
             </div>
-            <div className="modalInfo">
+            <div className={styles.modalInfo}>
               <h1 id="unstyled-modal-title">{props.titulo}</h1>
               <p>{props.data}</p>
               <p id="unstyled-modal-description">{props.resumo}</p>
-              <button className="modalBtn">
+              <button className={styles.modalBtn}>
                 {" "}
                 <a href={props.site} target="_blank">
                   Ir para o site{" "}
