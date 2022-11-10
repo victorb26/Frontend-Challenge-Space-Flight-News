@@ -8,3 +8,149 @@ html,body {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.container-top{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.group{
+  display: flex;
+  justify-content: center;
+}
+
+.theNews {
+  width: 680px;
+  height: 250px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.theNewsImage{
+  width: 200px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.theNewsImage img {
+  width: 200px;
+  height: 180px;
+  margin-right: 10px;
+}
+
+.theNewsInfo {
+  width: 450px;
+  height: 250px;
+  margin-top: 30px;
+}
+
+
+.theNewsInfo h1 {
+  height: 37%;
+}
+
+.modal {
+  display: flex;
+  justify-content: space-between;
+  border-color: #302E53;
+}
+.modalImage {
+  width: 200px;
+  height: 200px;
+}
+.modalImage img{
+  width: 200px;
+  height: 200px;
+}
+.modalInfo {
+  width: 400px;
+  height: 200px;
+}
+
+.modalBtn {
+  height: 30px;
+  width: 110px;
+  background: #D07017 ;
+  border-color: #D07017 ;
+ 
+}
+.modalBtn a{
+  text-decoration: none;
+  color: #302E53;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btnVerMais {
+  background: #1E2022 ;
+  border: #D07017 ;
+  color:  #D07017;
+  font-weight: bold;
+  height: 20px;
+  width: 90px;
+}
+.btnVerMais:hover{
+  cursor: pointer;
+}
+
+.container-top {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.searching {
+  margin-right: 20px;
+  padding: 10px;
+  height: 23px;
+  width: 230px;
+  border: solid 2px #302e53;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.txtFind {
+  height: 30px;
+  width: 200px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+}
+.search-icon {
+  height: 20px;
+}
+.filter {
+  margin-right: 25px;
+  padding: 10px;
+}
+.filter_select {
+  width: 120px;
+  height: 47px;
+  border: solid 2px #302e53;
+  background-color: white;
+  font-size: 16px;
+  outline: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.filter_select option {
+  text-align: center;
+}
+
+.btnCarregar{
+ display: flex;
+ justify-content: center;
+  border: #D07017 ;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.btnCarregar button {
+  height: 70px;
+  width: 150px;
+  background-color: #D07017;
+  color: #302E53;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
