@@ -1,7 +1,8 @@
-import  React from "react";
-import { styled, Box } from "@mui/system";
-import ModalUnstyled from "@mui/base/ModalUnstyled";
-import "../Modal/style.css"
+import * as React from 'react';
+import { styled, Box } from '@mui/system';
+import ModalUnstyled from '@mui/base/ModalUnstyled';
+import Backdrop from '@mui/material/Backdrop';
+import "../Modal/modal.css"
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -15,16 +16,6 @@ const StyledModal = styled(ModalUnstyled)`
   justify-content: center;
 `;
 
-const Backdrop = styled('div')`
-  z-index: -1;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-tap-highlight-color: transparent;
-`;
 
 const style = {
   width: 650,
@@ -68,6 +59,7 @@ export default function Modal(props) {
                   Ir para o site{" "}
                 </a>
               </button>
+              <button className='modalBtn' type="button" onClick={handleClose}>Fechar</button>
             </div>
           </section>
         </Box>
