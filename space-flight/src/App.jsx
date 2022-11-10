@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Modal from "../src/components/Modal/Modal.jsx";
 import ButtonCarregar from "../src/components/Buttons/ButtonCarregar.jsx";
@@ -22,9 +22,37 @@ export default function App() {
       });
   }, []);
 
+  function handleSortAsc() {
+    const sortedDataAsc = [...news].sort((a,b) => {
+      return a.publishedAt > b.publishedAt ? 1 : -1
+    })
+      setNews(sortedDataAsc)
+  }
+
+  function handleSortDsc() {
+    const sortedDataDsc = [...news].sort((a,b) => {
+      return b.publishedAt > a.publishedAt  ? 1 : -1
+    })
+      setNews(sortedDataDsc)
+  }
+
+  function handleChange({target}) {
+    if(!target.value.toLowerCase()){
+      setNews(search);
+      return;
+    }
+
+    const findNews = news.filter((news) => news.title.toLowerCase().includes(target.value.toLowerCase()))
+    setNews(findNews);
+    }
+
+    const carregarMais = () => {
+      setCounting((valorAnterior) => valorAnterior + 10)
+    }
+
   return (
     <>
-    <Appbar/>
+    <Appbar handleSortAsc={handleSortAsc} handleSortDsc={handleSortDsc} findNews={handleChange}/>
     <Header/>
       {news.sort((a, b) => {
           if (a > b) {
@@ -53,7 +81,8 @@ export default function App() {
             </section>
           );
         })}
-        <ButtonCarregar/>
+
+        <ButtonCarregar carregarMais={carregarMais}/>
         
     </>
   );

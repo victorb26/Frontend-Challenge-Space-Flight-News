@@ -1,5 +1,4 @@
 import React from "react";
-import "./Appbar.module.css";
 import SearchIcon from '@mui/icons-material/Search';
 
 function AppBar (props) {
@@ -15,7 +14,7 @@ function AppBar (props) {
     return(
         <section className="container-top">
     <div className="searching">
-      <input onChange={props.buscaNoticias} type="text" className="txtFind" placeholder="Search..."/>
+      <input onChange={props.findNews} type="text" className="txtFind" placeholder="Search..."/>
       <span className='search-icon'><SearchIcon/></span>
     </div>
     <div className='filter'>

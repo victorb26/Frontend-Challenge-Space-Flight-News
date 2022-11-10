@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from "./ButtonCarregar.module.css";
 
-export default function ButtonCarregar() {
+
+export default function ButtonCarregar({carregarMais}) {
   return(
-    <div className={styles.btnCarregar}>
-        <button>Carregar Mais</button>
+    <div className="btnCarregar">
+        <button onClick= {carregarMais}>Carregar Mais</button>
     </div> 
 )
 }
