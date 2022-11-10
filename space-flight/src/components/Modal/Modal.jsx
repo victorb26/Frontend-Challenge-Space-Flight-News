@@ -1,6 +1,7 @@
-import * as React from "react";
+import  React from "react";
 import { styled, Box } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
+import "../Modal/style.css"
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -14,7 +15,7 @@ const StyledModal = styled(ModalUnstyled)`
   justify-content: center;
 `;
 
-const Backdrop = styled("div")`
+const Backdrop = styled('div')`
   z-index: -1;
   position: fixed;
   right: 0;
@@ -28,8 +29,8 @@ const Backdrop = styled("div")`
 const style = {
   width: 650,
   height: 270,
-  bgcolor: "white",
-  border: "2px solid #302E53",
+  bgcolor: 'white',
+  border: '2px solid #302E53',
   p: 2,
   px: 4,
   pb: 3,
@@ -42,7 +43,7 @@ export default function Modal(props) {
 
   return (
     <div>
-      <button className="btnVerMais" type="button" onClick={handleOpen}>
+      <button className='btnVerMais' type="button" onClick={handleOpen}>
         Ver mais
       </button>
       <StyledModal
@@ -53,15 +54,15 @@ export default function Modal(props) {
         BackdropComponent={Backdrop}
       >
         <Box sx={style}>
-          <section className="modal">
-            <div className="modalImage">
+          <section className='modal'>
+            <div className='modalImage'>
               <img src={props.img} />
             </div>
-            <div className="modalInfo">
-              <h1 id="unstyled-modal-title">{props.titulo}</h1>
+            <div className='modalInfo'>
+              <h1 id="unstyled-modal-title">{props.titles}</h1>
               <p>{props.data}</p>
-              <p id="unstyled-modal-description">{props.resumo}</p>
-              <button className="modalBtn">
+              <p id="unstyled-modal-description">{props.resume}</p>
+              <button className='modalBtn'>
                 {" "}
                 <a href={props.site} target="_blank">
                   Ir para o site{" "}

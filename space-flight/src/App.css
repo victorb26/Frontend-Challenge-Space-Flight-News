@@ -19,8 +19,8 @@ html,body {
 }
 
 .theNews {
-  width: 680px;
-  height: 250px;
+  width: 740px;
+  height: 50%;
   margin: 10px auto;
   display: flex;
   justify-content: space-around;
@@ -39,47 +39,16 @@ html,body {
 }
 
 .theNewsInfo {
+
   width: 450px;
   height: 250px;
   margin-top: 30px;
 }
-
-
 .theNewsInfo h1 {
   height: 37%;
 }
 
-.modal {
-  display: flex;
-  justify-content: space-between;
-  border-color: #302E53;
-}
-.modalImage {
-  width: 200px;
-  height: 200px;
-}
-.modalImage img{
-  width: 200px;
-  height: 200px;
-}
-.modalInfo {
-  width: 400px;
-  height: 200px;
-}
 
-.modalBtn {
-  height: 30px;
-  width: 110px;
-  background: #D07017 ;
-  border-color: #D07017 ;
- 
-}
-.modalBtn a{
-  text-decoration: none;
-  color: #302E53;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-}
 
 .btnVerMais {
   background: #1E2022 ;

@@ -1,0 +1,32 @@
+.modal {
+    display: flex;
+    justify-content: space-between;
+    border-color: #302E53;
+  }
+  .modalImage {
+    width: 200px;
+    height: 200px;
+  }
+  .modalImage img{
+    width: 200px;
+    height: 200px;
+  }
+  .modalInfo {
+    width: 400px;
+    height: 200px;
+  }
+  
+  
+  .modalBtn {
+    height: 30px;
+    width: 110px;
+    background: #D07017 ;
+    border-color: #D07017 ;
+   
+  }
+  .modalBtn a{
+    text-decoration: none;
+    color: #302E53;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
