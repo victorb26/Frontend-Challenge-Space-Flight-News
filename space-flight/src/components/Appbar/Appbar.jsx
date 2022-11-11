@@ -1,5 +1,6 @@
 import React from "react";
 import SearchIcon from '@mui/icons-material/Search';
+import "../Appbar/appbar.css";
 
 function AppBar (props) {
 

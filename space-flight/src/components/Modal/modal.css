@@ -15,6 +15,10 @@
     width: 400px;
     height: 200px;
   }
+
+  .modalInfo p{
+    margin-top: 5%;
+  }
   
   
   .modalBtn {
@@ -22,11 +26,23 @@
     width: 110px;
     background: #D07017 ;
     border-color: #D07017 ;
-   
   }
   .modalBtn a{
     text-decoration: none;
     color: #302E53;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
   }
+
+  .closeBtn {
+    height: 30px;
+    width: 110px;
+    background: #1E2022 ;
+    border-color: #1E2022;
+    text-decoration: none;
+    color: #D07017;
+    font-weight: bold;
+    margin-left: 20%;
+    margin-top: 4%;
+   
+  }
+  

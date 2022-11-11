@@ -41,7 +41,6 @@ export default function Modal(props) {
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
         open={open}
-        onClose={handleClose}
         BackdropComponent={Backdrop}
       >
         <Box sx={style}>
@@ -59,7 +58,7 @@ export default function Modal(props) {
                   Ir para o site{" "}
                 </a>
               </button>
-              <button className='modalBtn' type="button" onClick={handleClose}>Fechar</button>
+              <button className='closeBtn' type="button" onClick={handleClose}>Fechar</button>
             </div>
           </section>
         </Box>
