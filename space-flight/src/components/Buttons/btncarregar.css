@@ -1,0 +1,21 @@
+.btnCarregar{
+    display: flex;
+    justify-content: center;
+     font-weight: bold;
+     font-family: 'Roboto', sans-serif;
+   }
+   .btnCarregar button {
+     height: 70px;
+     width: 150px;
+     background-color: #D07017;
+     border: #D07017 ;
+     color: #302553; 
+     font-weight: bold;
+     font-size: 19px;
+     border-radius: 5%;
+     margin-bottom: 2%;
+   }
+   
+   .btn:hover{
+     cursor: pointer;
+   }

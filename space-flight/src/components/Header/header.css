@@ -1,0 +1,12 @@
+.group{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-bottom: 1%;
+}
+
+.group h1{
+    font-size: bold;
+    font-family: 'Roboto', sans-serif;
+color: #302E53;
+}
