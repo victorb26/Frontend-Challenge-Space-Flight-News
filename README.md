@@ -23,6 +23,7 @@ Esta página da web exibe informações atualizadas sobre tudo que está rolando
 Antes de iniciar, se assegure que possui os requisitos abaixo instalados em sua máquina:
 
 - IDE - (Por exemplo, o [Visual Studio Code](https://code.visualstudio.com/))
+- [NodeJS](https://www.nodejs.org)
 - [NPM](https://www.npmjs.com)
 - [Git](https://git-scm.com/downloads)
 
