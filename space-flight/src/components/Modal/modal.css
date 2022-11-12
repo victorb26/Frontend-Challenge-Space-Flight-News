@@ -24,12 +24,13 @@
   .modalBtn {
     height: 30px;
     width: 110px;
-    background: #D07017 ;
-    border-color: #D07017 ;
+    background: #302E53;
+    border-color: #302E53;
+    border-radius: 6%;
   }
   .modalBtn a{
     text-decoration: none;
-    color: #302E53;
+    color: #D07017;
     font-weight: bold;
   }
 
@@ -43,6 +44,7 @@
     font-weight: bold;
     margin-left: 20%;
     margin-top: 4%;
+    border-radius: 6%;
    
   }
   

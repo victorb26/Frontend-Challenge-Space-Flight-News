@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Modal from "../src/components/Modal/Modal.jsx";
 import ButtonCarregar from "../src/components/Buttons/ButtonCarregar.jsx";
+import Appbar from "./components/Appbar/Appbar.jsx";
+import Header from "./components/Header/Header.jsx";
 import "./App.css";
-import Appbar from './components/Appbar/Appbar.jsx';
-import Header from './components/Header/Header.jsx';
-
 
 export default function App() {
   const [news, setNews] = useState([]);
@@ -23,38 +22,45 @@ export default function App() {
   }, []);
 
   function handleSortAsc() {
-    const sortedDataAsc = [...news].sort((a,b) => {
-      return a.publishedAt > b.publishedAt ? 1 : -1
-    })
-      setNews(sortedDataAsc)
+    const sortedDataAsc = [...news].sort((a, b) => {
+      return a.publishedAt > b.publishedAt ? 1 : -1;
+    });
+    setNews(sortedDataAsc);
   }
 
   function handleSortDsc() {
-    const sortedDataDsc = [...news].sort((a,b) => {
-      return b.publishedAt > a.publishedAt  ? 1 : -1
-    })
-      setNews(sortedDataDsc)
+    const sortedDataDsc = [...news].sort((a, b) => {
+      return b.publishedAt > a.publishedAt ? 1 : -1;
+    });
+    setNews(sortedDataDsc);
   }
 
-  function handleChange({target}) {
-    if(!target.value.toLowerCase()){
+  function handleChange({ target }) {
+    if (!target.value.toLowerCase()) {
       setNews(search);
       return;
     }
 
-    const findNews = news.filter((news) => news.title.toLowerCase().includes(target.value.toLowerCase()))
+    const findNews = news.filter((news) =>
+      news.title.toLowerCase().includes(target.value.toLowerCase())
+    );
     setNews(findNews);
-    }
+  }
 
-    const carregarMais = () => {
-      setCounting((valorAnterior) => valorAnterior + 10)
-    }
+  const carregarMais = () => {
+    setCounting((valorAnterior) => valorAnterior + 10);
+  };
 
   return (
     <>
-    <Appbar handleSortAsc={handleSortAsc} handleSortDsc={handleSortDsc} findNews={handleChange}/>
-    <Header/>
-      {news.sort((a, b) => {
+      <Appbar
+        handleSortAsc={handleSortAsc}
+        handleSortDsc={handleSortDsc}
+        findNews={handleChange}
+      />
+      <Header />
+      {news
+        .sort((a, b) => {
           if (a > b) {
             return 1;
           }
@@ -82,8 +88,7 @@ export default function App() {
           );
         })}
 
-        <ButtonCarregar carregarMais={carregarMais}/>
-        
+      <ButtonCarregar carregarMais={carregarMais} />
     </>
   );
 }
